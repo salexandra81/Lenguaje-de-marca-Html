@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario incidencias</title>
+</head>
+<body>
+
+       
+    <form action="procesar-incidencia.php">
+        <fieldset>
+            <legend>Datos de la incidencia</legend> 
+                <label for="usuario"><strong>Usuario:</strong></label><br>
+                <input type="text" id="usuario" name="usuario"><br><br>
+
+                <label for="departamento"><strong>Departamento</strong></label><br>
+                <select name="departamento" id="departamento">
+                    <option value="marketing">Marketing</option>
+                    <option value="informatica">Informática</option>
+                    <option value="ventas">Ventas</option>
+                </select><br><br>
+
+                <label for="descripcionIncidencia"><strong>Descripción;</strong></label><br>
+                <textarea name="descripcionIncidencia" id="descripcionIncidencia" cols="40" rows="3">Escribe aquí tu incidencia</textarea><br><br>
+
+                <label for="contrasena"><strong>Contraseña:</strong></label>
+                <input type="password" id="contrasena" name="contrasena">
+        
+    
+        </fieldset>
+        <fieldset>
+            <legend>Botón de resetear y envío</legend>
+            <input type="reset" name="resetear" id="resetear" value="Resetear"> <!--Limpia el formulario-->
+            <input type="submit" name="enviar" id="enviar" value="Enviar"><!--Envia  el formulario-->
+        </fieldset>
+</form>
+</body>
+</html>
