@@ -1,125 +1,248 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Músical</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Musical</title>
 
     <style>
-        #tablaTop10 th{
-            background-color:bisque;
-        }
+      #tablaTop10 th {
+        background-color: bisque;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#cancionMasVotada">Canción más votada</a><br>
-            <a href="#Top10">Top 10</a><br>
-            <a href="#Vota">Vota</a><br>
-        </nav><br>
-        <main>
-            <section>
-
-                <table border="1" id="tablaTop10">
-                    <tr>
-                    <th colspan="4">Top 10 de las mejores canciones del momento</th>
-                    </tr>
-                    <tr>
-                        <th>Puesto</th>
-                        <th>Grupo</th>
-                        <th>Canción</th>
-                        <th>Votos</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td rowspan="2">Queen</td>
-                        <td>Bohemian Rhapsody</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Don´t stop me now</td>
-                        <td>190</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Zahata</td>
-                        <td>Con las ganas</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Izal</td>
-                        <td>Pequeña Revolución</td>
-                        <td>90</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Vetusta Morla</td>
-                        <td>Días raros</td>
-                        <td rowspan="2">80</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Rozalen</td>
-                        <td>Girasoles</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Dua Lipa</td>
-                        <td>Physical</td>
-                        <td>70</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Amaral</td>
-                        <td>Como hablar</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Pink</td>
-                        <td>F**kin Perfect</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>El kanka</td>
-                        <td>Que bello es vivir</td>
-                        <td>40</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Total</td>
-                        <td>xxx</td>
-                    </tr>
-                    
-                    
-                </table >
-            </section>
-            
-            <section>
-                <fieldset>
-                    <legend>Datos del votante</legend>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre"><br><br>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"><br><br>
-                    <label for="edad">Edad:</label>
-                    <input type="number" min="1" max="130">
-
-
-
-                </fieldset>
-            </section>
-            
-        </main>
-        <footer>
-
-        </footer>
+      <nav>
+        <a href="#cancionMasVotada">Canción más votada</a><br />
+        <a href="#Top10">Top 10</a><br />
+        <a href="#Vota">Vota</a><br />
+      </nav>
+      <br />
     </header>
-</body>
+    <main>
+      <section id="cancionMasVotada">
+        <div>
+          <h1>La canción más votada es:</h1>
+          <img
+            src="imagenes/393778.webp"
+            alt="imagen cancion mas votada"
+            width="200"
+          />
+          <h3>Queen – Bohemian Rhapsody</h3>
+
+          <h4>Sobre el grupo</h4>
+          <p>
+            Sobre el grupo Queen es una banda británica de rock formada en
+            Londres en 1970. Sus integrantes más conocidos son Freddie Mercury
+            (voz), Brian May (guitarra), Roger Taylor (batería) y John Deacon
+            (bajo). El grupo alcanzó fama internacional gracias a su
+            originalidad, sus espectaculares actuaciones en directo y canciones
+            tan conocidas como We Will Rock You, We Are the Champions y Don't
+            Stop Me Now.
+          </p>
+          <h4>Sobre la canción más votada</h4>
+          <p>
+            Sobre la canción más votada Bohemian Rhapsody fue publicada en 1975
+            y forma parte del álbum A Night at the Opera. Fue escrita por
+            Freddie Mercury y destaca por combinar diferentes estilos musicales,
+            como el rock, la balada y la ópera. Con una duración de casi seis
+            minutos y una estructura poco habitual, se convirtió en una de las
+            canciones más emblemáticas de Queen. En nuestra clasificación
+            musical, Bohemian Rhapsody ocupa el primer puesto con 200 votos,
+            convirtiéndose en la canción favorita de nuestros participantes.
+          </p>
+          <h4>Si quieres mas información sobre el grupo consultalo <a href="https://www.queenonline.com/es">Aquí</a></h4>
+        </div>
+      </section>
+      <section id="Top10">
+        <table border="1" id="tablaTop10">
+          <tr>
+            <th colspan="4">Top 10 de las mejores canciones del momento</th>
+          </tr>
+          <tr>
+            <th>Puesto</th>
+            <th>Grupo</th>
+            <th>Canción</th>
+            <th>Votos</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td rowspan="2">Queen</td>
+            <td>Bohemian Rhapsody</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Don´t stop me now</td>
+            <td>190</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Zahara</td>
+            <td>Con las ganas</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Izal</td>
+            <td>Pequeña Revolución</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Vetusta Morla</td>
+            <td>Días raros</td>
+            <td rowspan="2">80</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Rozalen</td>
+            <td>Girasoles</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Dua Lipa</td>
+            <td>Physical</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Amaral</td>
+            <td>Como hablar</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Pink</td>
+            <td>F**kin Perfect</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>El kanka</td>
+            <td>Que bello es vivir</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td colspan="3">Total</td>
+            <td>880</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="Vota">
+        <!--Este formulario esta destinado al usuario pueda votar su canción favorita-->
+
+        <!--PARTE 1: DATOS PERSONALES-->
+        <form action="#">
+          <fieldset>
+            <legend>Datos del votante</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required /><br /><br />
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" /><br /><br />
+            <label for="telefono">Télefono: </label>
+            <input type="tel" minlength="9" maxlength="9" pattern="[0-9]{9}" id="telefono" name="telefono"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="edad">Edad:</label>
+            <input type="number" min="18" max="100" id="edad" name="edad" /><br><br>
+
+             <label for="imagenPersonal">Añade una imagen de ti: </label><br><br>
+            
+             <input type="file" accept="image/*" id="imagenPersonal" name="imagenPersonal">
+
+          </fieldset>
+
+          <!--PARTE 2: DATOS DE LA CANCION QUE LE GUSTA AL USUARIO-->
+          <fieldset>
+            <legend>Datos de la canción</legend>
+            <label for="nombreGrupo">Nombre del grupo: </label>
+            <input
+              type="text"
+              id="nombreGrupo"
+              name="nombreGrupo"
+            /><br /><br />
+            <label for="nombreCancion">Nombre de la canción: </label>
+            <input
+              type="text"
+              id="nombreCancion"
+              name="nombreCancion"
+              required
+            /><br /><br />
+            <label for="albumCancion"
+              >Álbum en el que aparece la canción:
+            </label>
+            <input
+              type="text"
+              id="albumCancion"
+              name="albumCancion"
+            /><br /><br />
+            <label for="fechaPublicacionDisco">Fecha publicación disco: </label>
+            <input
+              type="date"
+              id="fechaPublicacionDisco"
+              name="fechaPublicacionDisco"
+            /><br /><br />
+
+            <input type="checkbox" name="pop" id="pop" />
+            <label for="pop">Pop</label>
+
+            <input type="checkbox" name="espanol" id="espanol" />
+            <label for="espanol">Español</label>
+            <input type="checkbox" name="flamenco" id="flamenco" />
+            <label for="flamenco">Flamenco</label>
+            <input type="checkbox" name="rock" id="rock" />
+            <label for="rock">Rock</label>
+            <input type="checkbox" name="metal" id="metal" />
+            <label for="metal">Metal</label>
+            <input type="checkbox" name="reguetton" id="reguetton" />
+            <label for="reguetton">Reguettón</label>
+            <br /><br />
+            <label for="xqGustaCancion">¿Por qué te gusta la canción?</label>
+            <br /><br />
+            <textarea name="xqGustaCancion" id="xqGustaCancion"></textarea>
+          </fieldset>
+          <!--PARTE 3 CONCENTIMIENTO Y CONDICIONES DE PARTE DEL USUARIO-->
+          <fieldset>
+            <legend>Consentimiento y Condiciones</legend>
+            <select name="comoConocioWeb" id="comoConocioWeb">
+              <option value="unAmigo">A través de un amigo</option>
+              <option value="40Principales">
+                A través de los 40 principales
+              </option>
+              <option value="gooble">A través de Google</option>
+              <option value="otros">Otros</option></select
+            ><br /><br />
+            <input
+              type="checkbox"
+              required
+              id="aceptarAlmacenamientoDatos"
+              name="aceptarAlmacenamientoDatos"
+            />
+            <label for="aceptarAlmacenamientoDatos"
+              >Acepta el alamacenamiento de sus datos en nuestra base de
+              datos.</label
+            ><br /><br />
+            <input
+              type="checkbox"
+              id="aceptoNewLetter"
+              name="aceptoNewLetter"
+            />
+            <label for="aceptoNewLetter"
+              >Quiero inscribirme a vuestro News letter</label
+            ><br /><br />
+
+            <input type="submit" value="Votar" />
+            <input type="reset" value="Borrar formulario" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <p>Autora: Silvana Zannini Catasús</p>
+        <p>1º de DAW</p>
+    </footer>
+  </body>
 </html>
