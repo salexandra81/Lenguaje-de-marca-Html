@@ -4,15 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Músical</title>
+
+    <style>
+        #tablaTop10 th{
+            background-color:bisque;
+        }
+    </style>
+
 </head>
 <body>
     <header>
         <nav>
-            <a href="#cancionMasVotada">Canción más votada</a>
-            <a href="#cancionMasVotada">Canción más votada</a>
-            <a href="#cancionMasVotada">Canción más votada</a>
+            <a href="#cancionMasVotada">Canción más votada</a><br>
+            <a href="#Top10">Top 10</a><br>
+            <a href="#Vota">Vota</a><br>
+        </nav><br>
+        <main>
+            <section>
 
-        </nav>
+                <table border="1" id="tablaTop10">
+                    <tr>
+                    <th colspan="4">Top 10 de las mejores canciones del momento</th>
+                    </tr>
+                    <tr>
+                        <th>Puesto</th>
+                        <th>Grupo</th>
+                        <th>Canción</th>
+                        <th>Votos</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td rowspan="2">Queen</td>
+                        <td>Bohemian Rhapsody</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Don´t stop me now</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Zahata</td>
+                        <td>Con las ganas</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Izal</td>
+                        <td>Pequeña Revolución</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Vetusta Morla</td>
+                        <td>Días raros</td>
+                        <td rowspan="2">80</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Rozalen</td>
+                        <td>Girasoles</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Dua Lipa</td>
+                        <td>Physical</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Amaral</td>
+                        <td>Como hablar</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Pink</td>
+                        <td>F**kin Perfect</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>El kanka</td>
+                        <td>Que bello es vivir</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>xxx</td>
+                    </tr>
+                    
+                    
+                </table >
+            </section>
+            
+            <section>
+                <fieldset>
+                    <legend>Datos del votante</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre"><br><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"><br><br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" min="1" max="130">
+
+
+
+                </fieldset>
+            </section>
+            
+        </main>
+        <footer>
+
+        </footer>
     </header>
 </body>
 </html>
