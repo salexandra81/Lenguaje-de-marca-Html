@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+        form{
+            width: 400px;
+            margin: 20px;  
+            background-color: rgb(225, 233, 240); 
+            border-radius: 1%;
+        }
+        fieldset{
+            border-color: rgb(230, 229, 229);
+        }
+        legend{
+            font-weight: bold;
+            color:rgb(112, 112, 112) ;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        input,select,textarea{
+            width: 90%;
+            padding: 8px;
+            border-radius: 1cap;
+            border-color: grey;
+        }
+        textarea{
+            resize: vertical;
+        }
+        input:focus{
+            background-color: plum;  /*cambia el color cuando entras al input*/
+        }
+        input[type="submit"]:hover{
+            background-color: plum;
+        }
+
+    </style>
+  </head>
+  <body>
+    <form action="index.php">
+      <fieldset>
+        <legend>Datos de la incidencia</legend>
+        <p>
+          <label
+            >Usuario:
+            <input type="text" name="usu" />
+          </label>
+        </p>
+        <p>
+          <label
+            >Departamento: 
+            <select name="dep">
+              <option>Informática</option>
+              <option>Marketing</option>
+              <option>Ventas</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label
+            >Descripción: 
+            <textarea cols="40" rows="3" autofocus></textarea>
+          </label>
+        </p>
+        <p>
+          <label>Contraseña: 
+            <input type="password" value="" name="pw" />
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Botones</legend>
+        <input type="reset" value="Reset" />
+        <input
+          type="submit"
+          value="Enviar"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horario</title>
+    <style>
+
+    
+
+        tr:nth-child(1){background-color: beige;}
+        th{text-transform: uppercase;}
+        tr:nth-child(odd):not(:first-child){
+            background-color: rgb(174, 174, 219)
+        }
+        tr:nth-child(even){
+            background-color:rgb(224, 178, 202) ;
+        }
+
+        table{
+            border: 2px solid  blue;
+            border-collapse: separate;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            width: 100%;
+            table-layout: fixed;
+        }
+         tr:hover:not(:first-child){ 
+            background-color:black;
+            color: antiquewhite;
+            }
+      
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Horario Escolar</h1>
+    <table>
+      <tr>
+        <th>Horas</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <td>8:00 - 9:00</td>
+        <td>Matemáticas</td>
+        <td>Historia</td>
+        <td>Inglés</td>
+        <td>Ciencias</td>
+        <td>Educación Física</td>
+      </tr>
+      <tr>
+        <td>9:00 - 10:00</td>
+        <td>Inglés</td>
+        <td>Matemáticas</td>
+        <td>Arte</td>
+        <td>Historia</td>
+        <td>Informática</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td>Ciencias</td>
+        <td>Educación Física</td>
+        <td>Matemáticas</td>
+        <td>Inglés</td>
+        <td>Biología</td>
+      </tr>
+      <tr>
+        <td>11:00 - 12:00</td>
+        <td>Historia</td>
+        <td>Ciencias</td>
+        <td>Educación Física</td>
+        <td>Matemáticas</td>
+        <td>Química</td>
+      </tr>
+      <tr>
+        <td>12:00 - 1:00</td>
+        <td>Arte</td>
+        <td>Historia</td>
+        <td>Inglés</td>
+        <td>Geografía</td>
+        <td>Matemáticas</td>
+      </tr>
+    </table>
+  </body>
+</html>
