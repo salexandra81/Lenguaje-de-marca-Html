@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casita</title>
+    <style>
+
+        #pared{
+            background-color: gray;
+            width: 500px;
+            height: 500px;
+            box-sizing: border-box;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            margin: 60px;
+            position: relative;
+
+        }
+        #techo{
+            background-color: red;
+            width: 600px;
+            height: 70px;
+            box-sizing: border-box;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            border-bottom-width:10px;
+            position: absolute;
+            top: -60px;
+            left: -50px;
+        }
+
+        #ventana1 , #ventana2{
+            background-color: blue;
+            width: 80px;
+            height: 80px;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+        }
+        #ventana2{
+            position: absolute;
+            top:120px;
+            left: 30px;
+        }
+
+        #ventana2:hover{
+            background-color: rgb(233, 203, 163);
+        }
+
+        #ventana1{
+            position: absolute;
+            right: 40px;
+            top: 250px;
+        }
+
+        #puerta{
+            background-color:brown;
+            width: 120px;
+            height: 110px;
+            box-sizing: border-box;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            position: absolute;
+            bottom: 0px;
+            right: 190px;
+            color: black;
+            font-weight: bold;
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="pared">
+        <div id="techo"></div>
+        <div id="ventana1"></div>
+        <div id="ventana2"></div>
+        <div id="puerta">120</div>
+    </div>
+    
+</body>
+</html>
